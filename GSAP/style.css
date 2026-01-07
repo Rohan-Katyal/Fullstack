@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    background-color: #111;
+}
+
+.box1{
+    height: 100px;
+    width: 100px;
+    background-color: crimson;
+    position: absolute;
+    z-index: 2;
+}
+
+
+.box2{
+    height: 100px;
+    width: 100px;
+    top: 100px;
+    background-color: lightgreen;
+    position: absolute;
+    z-index: 2;
+}
+
+.box3{
+    height: 200px;
+    width: 210px;
+    background-color: wheat;
+    position: absolute;
+    left: 400px;
+    opacity: 0;
+}
