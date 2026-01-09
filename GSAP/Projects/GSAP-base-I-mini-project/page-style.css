@@ -16,23 +16,25 @@ html,body{
     /* border: solid white 1px; */
     display: flex;
     justify-content: right;
-    margin: 30px 20px;
+    margin: 20px 20px;
     padding: 0px 50px;
 }
 
 #nav h4{
     /* border: solid white 1px; */
     /* line-height: 4; */
-    padding: 10px 10px;
-    margin: 0px 10px;
+    padding: 20px;
+    /* margin: 0px 0px 10px 0px; */
 }
 
 #logo{
-    height: 12vh;
+    height: 5vw;
     padding: 0px;
     position: absolute;
     left: 10%;
-    top: 2.5%;
+    top: 0%;
+    margin: 0px;
+    padding: 0px;
 }
 
 #logo:hover{
@@ -86,4 +88,32 @@ html,body{
     color: #ffffff;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #1e3347;
+}
+
+#page1{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+#page2{
+    height: 100%;
+    width: 100%;
+    background-color: #1e3347;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+#textAnimation{
+    font-size: 40vw;
+    color: #fec56b;
+    text-transform: uppercase;
+    /* transform: translateX(-246%); */
+}
+
+#page3{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-color: #fec56b;
 }
