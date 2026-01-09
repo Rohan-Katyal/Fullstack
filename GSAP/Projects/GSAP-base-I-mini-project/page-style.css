@@ -73,7 +73,7 @@ html,body{
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 40px;
-    white-space: no-wrap;
+    white-space: nowrap;
     width: max-content;
 }
 
@@ -83,7 +83,7 @@ html,body{
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 40px;
-    white-space: no-wrap;
+    white-space: nowrap;
     width: max-content;
     color: #ffffff;
     -webkit-text-stroke-width: 1px;

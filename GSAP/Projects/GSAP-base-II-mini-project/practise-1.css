@@ -1,0 +1,41 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing:border-box;
+    font-size: 40vw;
+    white-space: nowrap;
+    text-transform: uppercase;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+.section{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+#section1{
+    color: bisque;
+    background-color: #222;
+    font-family: gilroy;
+}
+
+#section2{
+    background-color: bisque;
+    color: #222;
+    font-family: Tahoma;
+}
+#section3{
+    color: bisque;
+    background-color: #222;
+    font-family: Impact;
+}
+#section4{
+    background-color: bisque;
+    color: #222;
+    font-family: Verdana;
+}
