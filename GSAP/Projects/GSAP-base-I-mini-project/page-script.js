@@ -38,3 +38,47 @@ gsap.to("#textAnimation",{
         pin: true
     }
 })
+
+//  SVG animations
+
+
+var string = document.querySelector("#string");
+
+var stringWidth = string.clientWidth;
+
+var initPath = `M 10 150 Q ${0.5*stringWidth} 150 ${0.99*stringWidth} 150`;
+var finalPath = `M 10 150 Q ${0.5*stringWidth} 150 ${0.99*stringWidth} 150`;
+
+var stringPath = document.querySelector("#stringPath");
+
+stringPath.setAttribute('d', initPath)
+
+string.addEventListener("mousemove",function(coords){
+    
+    // console.log(`x : ${coords.offsetX} | y : ${coords.offsetY}`);
+    
+    function offsetYVal(val, offset){
+        if(val <= 150){
+            val = val - offset
+        }
+        else if(val > 150){
+            val = val + offset
+        }
+        return val
+    }
+
+    var path = `M 10 150 Q ${coords.offsetX} ${offsetYVal(coords.offsetY, 15)} ${0.99*stringWidth} 150`;
+    gsap.to("#stringPath",{
+        attr : {d : path},
+        duration : 0.3,
+        ease : "power3.out"
+    })
+})
+
+string.addEventListener("mouseleave",function(){
+    gsap.to("#stringPath",{
+        attr:{d : finalPath},
+        ease : "elastic.out(1,0.05)",
+        duration : 1.5
+    })
+})
