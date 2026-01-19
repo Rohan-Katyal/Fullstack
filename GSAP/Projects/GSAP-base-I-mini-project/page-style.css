@@ -10,6 +10,7 @@ html,body{
     width: 100%;
     color: #1e3347;
     background-color: #fec56b;
+    cursor:none;
 }
 
 #nav{
@@ -134,4 +135,18 @@ html,body{
     /* border: solid black; */
     display: flex;
     padding: 0px 30px;
-} 
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+}
+
+#cursor{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: fixed;
+    z-index : 9;
+}
