@@ -7,17 +7,71 @@ tl.from("#logo",{
     delay: 0.5
 })
 
-tl.from("#navItems h4",{
+tl.from("#navbar",{
     y: -30,
     opacity: 0,
     duration: 0.7,
     stagger: 0.5
 })
 
-tl.from("#headingText",{
-    y: -30,
+// tl.from("#navItems h4",{
+//     y: -30,
+//     opacity: 0,
+//     duration: 0.7,
+//     stagger: 0.5
+// })
+
+
+function headingBreak(){
+    
+var heading = document.querySelector('#headingText');
+var headingText = heading.textContent;
+
+var splittedHeading = headingText.split("");
+var midofHeading = splittedHeading.length/2;
+
+var spantextVar = "";
+
+splittedHeading.forEach(function(e,i){
+    // console.log(e,i)
+    if(i < midofHeading){
+        spantextVar += `<span class="social">${e}</span>`    
+    }
+    else if (i == midofHeading){
+        spantextVar += `<span class="dash">${e}</span>`
+    }
+    else{
+        spantextVar += `<span class="craft">${e}</span>`
+    }    
+})
+
+
+heading.innerHTML = spantextVar;
+}
+
+headingBreak();
+
+gsap.from('.social', {
+    y : 100,
     opacity: 0,
-    duration: 1
+    duration : 0.5,
+    delay : 0.2,
+    stagger: 0.2
+})
+
+gsap.from('.craft',{
+    y : 100,
+    opacity: 0,
+    duration : 0.5,
+    delay : 0.2,
+    stagger : -0.2
+})
+
+gsap.from('.dash',{
+    y : 100,
+    opacity: 0,
+    duration : 2,
+    delay : 0.2,
 })
 
 tl.from("#headingText-pt2",{
@@ -89,9 +143,43 @@ var cursor = document.querySelector("#cursor");
 
 main.addEventListener("mousemove", function(dets){
     gsap.to(cursor,{
-        x : dets.x-20,
-        y : dets.y-30,
+        x : dets.x+10,
+        y : dets.y+10,
         duration : 2,
         ease : "circ.out"
     })
 })
+
+
+var menu = document.querySelector("#navbar i");
+var close = document.querySelector("#full i");
+
+var tl = gsap.timeline();
+
+
+tl.to("#full",{
+    right: 0,
+    duration: 0.5
+})
+
+tl.from("#full h4",{
+    x : 150,
+    duration: 0.35,
+    opacity : 0,
+    stagger : 0.32
+})
+
+tl.from("#full i",{
+    opacity: 0
+})
+
+tl.pause()
+
+menu.addEventListener("click",function(){
+    tl.play()
+})
+
+close.addEventListener("click",function(){
+    tl.reverse()
+})
+

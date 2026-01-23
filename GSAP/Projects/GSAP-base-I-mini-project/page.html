@@ -1,61 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SocialCraft</title>
     <link href="page-style.css" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="https://lh3.googleusercontent.com/a/ACg8ocI6_eXh_KjcMY-UetL9BDABSvDLQuInJevefW7qoJZav3Fpq7E=s400-c-no">
+    <link rel="icon" type="image/x-icon"
+        href="https://lh3.googleusercontent.com/a/ACg8ocI6_eXh_KjcMY-UetL9BDABSvDLQuInJevefW7qoJZav3Fpq7E=s400-c-no">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.8.0/fonts/remixicon.css" rel="stylesheet" />
 </head>
+
 <body>
 
     <div id="main">
         <div id="cursor">
         </div>
+    
         
         <div id="page1">
-        <div id="nav">
-            <img id="logo" src="https://lh3.googleusercontent.com/a/ACg8ocI6_eXh_KjcMY-UetL9BDABSvDLQuInJevefW7qoJZav3Fpq7E=s400-c-no">
-            <div id="navItems">
+            <div id="nav">
+                <img id="logo"
+                    src="https://lh3.googleusercontent.com/a/ACg8ocI6_eXh_KjcMY-UetL9BDABSvDLQuInJevefW7qoJZav3Fpq7E=s400-c-no">
+                <!-- <div id="navItems">
+                    <h4>Home</h4>
+                    <h4>Content</h4>
+                    <h4>About</h4>
+                    <h4>Contact Us</h4>
+                </div> -->
+
+                <div id="navbar">
+                <i class="ri-menu-fold-line"></i>
+            </div>
+            
+            <div id="full">
                 <h4>Home</h4>
                 <h4>Content</h4>
                 <h4>About</h4>
                 <h4>Contact Us</h4>
+                <i class="ri-close-line"></i>
             </div>
-        </div>
+            </div>
+            
 
-        <h2 id="headingText">Social Craft, <h2 id="headingText-pt2"> Crafting Socially !!</h2></h2>
+            
+            <h2 id="headingText">Social-Craft</h2><h2 id="headingText-pt2"> Crafting Socially !!</h2>
+            
         </div>
 
         <div id="page2">
             <h2 id="textAnimation">Social Craft !!</h2>
         </div>
-        
+
         <div id="page3">
             <div id="string">
                 <svg id="stringSvg" width="" height="">
-                <!--       x  y    x  y   x  y -->
-                <path id="stringPath" d="" stroke="#1e3347" stroke-width="2" fill="transparent"/>
-            </svg>
+                    <!--       x  y    x  y   x  y -->
+                    <path id="stringPath" d="" stroke="#1e3347" stroke-width="2" fill="transparent" />
+                </svg>
             </div>
-        <div id="arrowtextDiv">
-            <h5 id="arrowText" >Pull the String !!</h5>
-            <svg id="arrowContainer" width="100px" height="100px">
-                <!-- <rect height="150" width="150" fill="#EEE"></rect> -->
-                <g>
-                    <path id="arrowPath" d="M 5 20 Q 30 30 40 0" stroke="#1e3347" stroke-width="4" fill="transparent"/>
-                    <line x1="40" y1="0.5" x2="25" y2="10" stroke="#1e3347" stroke-width="4" />
-                    <line x1="40" y1="0.1" x2="45" y2="15" stroke="#1e3347" stroke-width="4" />
-                </g>
-            </svg>
+            <div id="arrowtextDiv">
+                <h5 id="arrowText">Pull the String !!</h5>
+                <svg id="arrowContainer" width="100px" height="100px">
+                    <!-- <rect height="150" width="150" fill="#EEE"></rect> -->
+                    <g>
+                        <path id="arrowPath" d="M 5 20 Q 30 30 40 0" stroke="#1e3347" stroke-width="4"
+                            fill="transparent" />
+                        <line x1="40" y1="0.5" x2="25" y2="10" stroke="#1e3347" stroke-width="4" />
+                        <line x1="40" y1="0.1" x2="45" y2="15" stroke="#1e3347" stroke-width="4" />
+                    </g>
+                </svg>
+            </div>
         </div>
-        </div>
-        
-    </div>
-
     
+    </div>
+    
+
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js" integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"
+        integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="page-script.js"></script>
 </body>
+
 </html>
