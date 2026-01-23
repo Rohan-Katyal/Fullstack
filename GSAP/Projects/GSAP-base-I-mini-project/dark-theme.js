@@ -1,4 +1,5 @@
-var themeTogglebtn = document.querySelector('#theme-btn');
+
+document.addEventListener("DOMContentLoaded", function(){var themeTogglebtn = document.querySelector('#theme-btn');
 
 themeTogglebtn.addEventListener('click', toggleTheme);
 
@@ -38,3 +39,4 @@ function toggleTheme(){
 // }
 
 
+})
