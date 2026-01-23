@@ -143,9 +143,10 @@ var cursor = document.querySelector("#cursor");
 
 main.addEventListener("mousemove", function(dets){
     gsap.to(cursor,{
-        x : dets.x+10,
-        y : dets.y+10,
+        x : dets.x-50,
+        y : dets.y-15,
         duration : 2,
+        delay: 0.05,
         ease : "circ.out"
     })
 })
