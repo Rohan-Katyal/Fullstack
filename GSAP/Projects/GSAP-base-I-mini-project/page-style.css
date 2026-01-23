@@ -5,11 +5,21 @@
     box-sizing:border-box;
 }
 
+:root{
+    --primary : #1e3347;
+    --secondary : #fec56b;
+}
+
+[data-theme = "dark"]{
+    --primary : #fec56b;
+    --secondary : #1e3347;
+}
+
 html,body{
     height: 100%;
     width: 100%;
-    color: #1e3347;
-    background-color: #fec56b;
+    color: var(--primary);
+    background-color: var(--secondary);
     /* cursor:none; */
 }
 
@@ -91,9 +101,9 @@ html,body{
     font-size: 40px;
     white-space: nowrap;
     width: max-content;
-    color: #fec56b;
+    color: var(--secondary);
     -webkit-text-stroke-width: 1.8px;
-    -webkit-text-stroke-color: #1e3347;
+    -webkit-text-stroke-color: var(--primary);
 }
 
 #page1{
@@ -107,14 +117,14 @@ html,body{
 #page2{
     height: 100%;
     width: 100%;
-    background-color: #1e3347;
+    background-color: var(--primary);
     overflow: hidden;
     white-space: nowrap;
 }
 
 #textAnimation{
     font-size: 40vw;
-    color: #fec56b;
+    color: var(--secondary);
     text-transform: uppercase;
     /* transform: translateX(-246%); */
 }
@@ -123,7 +133,7 @@ html,body{
     height: max-content;
     width: 100%;
     /* position: relative; */
-    background-color: #fec56b;
+    background-color: var(--secondary);
 }
 
 
@@ -152,9 +162,9 @@ html,body{
 #cursor{
     height: 25px;
     width: 25px;
-    border: solid #fec56b 1px;
+    border: solid var(--secondary) 1px;
     border-radius: 50%;
-    background-color: #1e3347;
+    background-color: var(--primary);
     position: fixed;
     z-index : 9;
 }
@@ -177,7 +187,7 @@ html,body{
     display: flex;
     flex-direction: column;
     justify-content:space-around;
-    background-color: #1e3347;
+    background-color: var(--primary);
     font-size: 25px;
     padding: 20px 30px;
     backdrop-filter: blur(20px);
@@ -185,7 +195,7 @@ html,body{
 }
 
 #full h4{
-    color : #fec56b;
+    color : var(--secondary);
 }
 
 #full i{
@@ -194,7 +204,21 @@ html,body{
     right: 0;
     margin: 20px 30px;
     padding: 5px;
-    color: #1e3347;
-    background-color:  #fec56b;
+    color: var(--primary);
+    background-color:  var(--secondary);
     border-radius: 100%;
+}
+
+
+#theme-btn{
+    position: fixed;
+    top: 4%;
+    left: 5%; 
+    z-index: 10;
+    padding: 8px;
+    font-size: 12px;
+    color: var(--primary);
+    background-color: var(--secondary);
+    border: solid var(--primary) 2px;
+    border-radius: 10%;
 }
